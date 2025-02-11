@@ -12,27 +12,55 @@
             font-family: Arial, sans-serif; /* Optional: Set a default font */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        /* Limit the image width and make it responsive */
+        /* Style for images */
         img {
             max-width: 100%;  /* Makes the image fit within its container */
             height: auto;     /* Keeps the aspect ratio */
             display: block;   /* Remove any extra space below the image */
-            margin: 0 auto;   /* Center the image */
+            margin: 10px;     /* Space between images */
+            max-width: 200px; /* Optional: Set max width for the images */
         }
 
         h1 {
             text-align: center;  /* Center the heading */
             margin-top: 20px;
         }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to Bruh Cat!</h1>
-    <a href="https://www.youtube.com/watch?v=B9wePPxOkLI" target="_blank">
-        <img src="images/cat.jpg" alt="A cute cat" />
-    </a>
+    <div class="image-container">
+        <!-- The images will be dynamically added here by JavaScript -->
+    </div>
+
+    <script>
+        // Array of image filenames in the 'images' folder
+        const imageFiles = [
+            'cat1.jpg',
+            'cat2.jpg',
+            'cat3.jpg', // Add all your image filenames here
+        ];
+
+        // Function to display images dynamically
+        const container = document.querySelector('.image-container');
+        imageFiles.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `images/${image}`;
+            imgElement.alt = `Bruh Cat ${image}`;
+            container.appendChild(imgElement);
+        });
+    </script>
 </body>
 </html>
 
