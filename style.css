@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    background-color: #001f3f; /* Dark blue */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cat-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.back-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-home a {
+    color: #00aaff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-home a:hover {
+    text-decoration: underline;
+}
