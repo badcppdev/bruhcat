@@ -11,71 +11,74 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            min-height: 100vh;
-            flex-direction: column;
         }
 
         img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 10px;
-            max-width: 200px;
+            margin: 0 auto;
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
             margin-top: 20px;
         }
 
-        .image-container {
+        .cat-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-        }
-
-        /* Newsletter Section */
-        .newsletter {
-            background-color: #333;
-            color: white;
+            gap: 20px;
             padding: 20px;
+        }
+
+        .cat-card {
+            max-width: 300px;
+            border: 1px solid white;
+            padding: 10px;
             text-align: center;
-            margin-top: auto;
+            background-color: #222;
+            border-radius: 10px;
         }
 
-        /* Style for the newsletter text */
-        .newsletter p {
-            font-size: 16px;
-            line-height: 1.5;
+        a {
+            color: white;
+            text-decoration: none;
         }
 
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to Bruh Cat!</h1>
-    <div class="image-container">
-        <a href="sorbis.html">
-            <img src="images/sorb1.jpg" alt="Sorbis - Image 1">
-        </a>
-        <a href="sorbis.html">
-            <img src="images/sorb2.jpg" alt="Sorbis - Image 2">
-        </a>
-        <a href="hummus.html">
-            <img src="images/hummus1.jpg" alt="Hummus - Image 1">
-        </a>
-        <a href="hummus.html">
-            <img src="images/hummus2.jpg" alt="Hummus - Image 2">
-        </a>
-    </div>
-
-    <!-- Static Newsletter Section -->
-    <div class="newsletter">
-        <h2>Weekly Updates</h2>
-        <p>Welcome to my website!! (yes i know its mispelled)</p>
-        <p>Todayi just registered this site!!!!! 2/11/2025</p>
+    <div class="cat-container">
+        <div class="cat-card">
+            <a href="sorbis.html">
+                <img src="images/sorb1.jpg" alt="Sorbis">
+                <h2>Sorbis</h2>
+            </a>
+        </div>
+        <div class="cat-card">
+            <a href="hummus.html">
+                <img src="images/hummus1.jpg" alt="Hummus">
+                <h2>Hummus</h2>
+            </a>
+        </div>
+        <div class="cat-card">
+            <a href="buttermilk.html">
+                <img src="images/buttermilk1.jpg" alt="Buttermilk">
+                <h2>Buttermilk</h2>
+            </a>
+        </div>
+        <div class="cat-card">
+            <a href="littleguy.html">
+                <img src="images/littleguy1.jpg" alt="Little Guy">
+                <h2>Little Guy</h2>
+            </a>
+        </div>
     </div>
 </body>
 </html>
