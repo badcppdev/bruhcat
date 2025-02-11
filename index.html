@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruh Cat</title>
     <style>
-        /* Black background and white text */
         body {
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif; /* Optional: Set a default font */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,17 +16,16 @@
             justify-content: center;
         }
 
-        /* Style for images */
         img {
-            max-width: 100%;  /* Makes the image fit within its container */
-            height: auto;     /* Keeps the aspect ratio */
-            display: block;   /* Remove any extra space below the image */
-            margin: 10px;     /* Space between images */
-            max-width: 200px; /* Optional: Set max width for the images */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px;
+            max-width: 200px;
         }
 
         h1 {
-            text-align: center;  /* Center the heading */
+            text-align: center;
             margin-top: 20px;
         }
 
@@ -41,25 +39,18 @@
 <body>
     <h1>Welcome to Bruh Cat!</h1>
     <div class="image-container">
-        <!-- The images will be dynamically added here by JavaScript -->
+        <a href="sorbis.html">
+            <img src="images/sorb1.jpg" alt="Sorbis - Image 1">
+        </a>
+        <a href="sorbis.html">
+            <img src="images/sorb2.jpg" alt="Sorbis - Image 2">
+        </a>
+        <a href="hummus.html">
+            <img src="images/hummus1.jpg" alt="Hummus - Image 1">
+        </a>
+        <a href="hummus.html">
+            <img src="images/hummus2.jpg" alt="Hummus - Image 2">
+        </a>
     </div>
-
-    <script>
-        // Array of image filenames in the 'images' folder
-        const imageFiles = [
-            '8305192a-f0c3-4d1c-92db-539f445ee64f.jpg',
-            'cat.jpg',
-            'image.jpg' // Add your correct image filenames here
-        ];
-
-        // Function to display images dynamically
-        const container = document.querySelector('.image-container');
-        imageFiles.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = `images/${image}`;
-            imgElement.alt = `Bruh Cat ${image}`;
-            container.appendChild(imgElement);
-        });
-    </script>
 </body>
 </html>
