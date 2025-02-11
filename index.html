@@ -14,6 +14,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         img {
@@ -34,6 +36,22 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        /* Newsletter Section */
+        .newsletter {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* Style for the newsletter text */
+        .newsletter p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
     </style>
 </head>
 <body>
@@ -51,6 +69,13 @@
         <a href="hummus.html">
             <img src="images/hummus2.jpg" alt="Hummus - Image 2">
         </a>
+    </div>
+
+    <!-- Static Newsletter Section -->
+    <div class="newsletter">
+        <h2>Weekly Updates</h2>
+        <p>Welcome to my website!! (yes i know its mispelled)</p>
+        <p>Todayi just registered this site!!!!! 2/11/2025</p>
     </div>
 </body>
 </html>
