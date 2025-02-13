@@ -1,0 +1,20 @@
+name: Deploy to GreenGeeks
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH into server and pull latest changes
+        uses: appleboy/ssh-action@master
+        with:
+          host: your-server-ip
+          username: your-username
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/public_html
+            git pull origin main
