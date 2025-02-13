@@ -12,8 +12,8 @@ jobs:
       - name: SSH into server and pull latest changes
         uses: appleboy/ssh-action@master
         with:
-          host: your-server-ip
-          username: your-username
+          host: 65.60.36.230
+          username: theorig8
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/public_html
