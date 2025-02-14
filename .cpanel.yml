@@ -1,0 +1,5 @@
+deployment:
+  commands:
+    - "echo 'Deploying your site...'"
+    - "cp -R * /home/theorig8/public_html"
+
